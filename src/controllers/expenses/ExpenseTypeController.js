@@ -2,6 +2,8 @@ const { ExpenseType } = require("../../entity/ExpenseType");
 const {
   Get,
   Post,
+  Put,
+  Delete,
   Body,
   Query,
   Param

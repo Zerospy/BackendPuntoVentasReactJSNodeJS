@@ -1,3 +1,5 @@
+
+
 const TRANSACTION_ID_NOT_FOUND = {
     code: "TRANSACTION_ID_NOT_FOUND",
     message: "se envió un ID de transacción no válido"
@@ -55,3 +57,5 @@ const TRANSACTION_ID_NOT_FOUND = {
     BALANCE_MISMATCH
   };
   
+
+

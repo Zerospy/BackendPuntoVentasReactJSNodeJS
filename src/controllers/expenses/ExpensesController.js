@@ -4,7 +4,7 @@ const {
   Post,
   Body,
   Query,
-  Param
+  Param, Put, Delete
 } = require("routing-controllers");
 
 const {

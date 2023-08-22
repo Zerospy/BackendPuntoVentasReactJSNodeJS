@@ -1,5 +1,5 @@
 const { EntitySchema } = require("typeorm");
-const { Base } = require("./Base");
+const { Base } = require("./Base"); // Importar la clase Base correctamente
 
 class ExpenseType extends Base {
   constructor() {

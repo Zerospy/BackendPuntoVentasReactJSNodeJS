@@ -1,10 +1,19 @@
-const { Get, Controller } = require('routing-controllers');
+const express = require('express');
 
-@Controller()
 class AuthController {
-  @Get('/')
-  async login() {
-    return 'Bienvenido a la API de react-point-of-sale';
+  constructor() {
+    this.router = express.Router();
+    this.initializeRoutes();
+  }
+
+  initializeRoutes() {
+    this.router.get('/', async (req, res) => {
+      res.send('Bienvenido a la API de react-point-of-sale');
+    });
+  }
+  
+  getRouter() {
+    return this.router;
   }
 }
 

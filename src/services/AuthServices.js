@@ -1,6 +1,6 @@
 const { getManager } = require("typeorm");
 const { User } = require("../entity/User");
-const { UserLoginPost } = require("../dtos/authTypes").default;
+const { UserLoginPost } = require("../dtos/authTypes");
 
 class AuthServices {
   async fetchUser(userPost) {

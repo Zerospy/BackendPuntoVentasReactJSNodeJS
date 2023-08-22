@@ -30,3 +30,5 @@ ManyToOne(type => User, {
   onUpdate: "CASCADE",
   nullable: false
 })(Base.prototype, "updatedBy");
+
+module.exports = { Base }; // Exportar la clase Base de manera adecuada
