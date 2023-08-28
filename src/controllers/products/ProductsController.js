@@ -1,5 +1,5 @@
 const { Product } = require("../../entity/Product");
-const { Get, Post, Body, QueryParam, Param } = require("routing-controllers");
+const { Get, Post, Body, QueryParam, Param, Put, Delete } = require("routing-controllers");
 const { PaginationInfo } = require("../../decorators/PaginationInfo");
 const { CrudServices } = require("../../services/CrudServices");
 

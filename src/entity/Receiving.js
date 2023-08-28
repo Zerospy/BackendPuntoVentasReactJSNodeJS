@@ -23,8 +23,8 @@ Receiving.prototype.product = ManyToOne(type => Product);
 Receiving.prototype.productId = Column();
 Receiving.prototype.vendor = ManyToOne(type => Vendor);
 Receiving.prototype.vendorId = Column();
-Receiving.prototype.qty = IsPositive()(Column());
-Receiving.prototype.price = IsPositive()(Column({ type: "float" }));
-Receiving.prototype.payedAt = IsNotEmpty()(Column());
+//Receiving.prototype.qty = IsPositive()(Column());
+//Receiving.prototype.price = IsPositive()(Column({ type: "float" }));
+//Receiving.prototype.payedAt = IsNotEmpty()(Column());
 
 module.exports = Receiving;
