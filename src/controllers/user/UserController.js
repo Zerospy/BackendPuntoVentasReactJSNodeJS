@@ -2,6 +2,7 @@ const { User, Role } = require("../../entity/User");
 const { PaginationInfo } = require("../../decorators/PaginationInfo");
 const { CrudServices } = require("../../services/CrudServices");
 const { CurrentUser } = require("../../decorators/CurrentUser");
+const { Authorized } = require("routing-controllers");
 
 class UsersController {
   constructor() {  
