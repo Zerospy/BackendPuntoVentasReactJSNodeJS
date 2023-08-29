@@ -59,9 +59,11 @@ async function authorizationChecker(action, roles) {
       controllers: [__dirname + '/controllers/**/*.js'], // Cambia la extensión a .js
     });
 
-    server.expressMiddlewares.forEach((middleware) => {
-      app.use(middleware);
-    });
+    if (server.expressMiddlewares && Array.isArray(server.expressMiddlewares)) {
+      server.expressMiddlewares.forEach((middleware) => {
+        app.use(middleware);
+      });
+    }
 
     const port = process.env.PORT || 3500;
     app.listen(port, () => {

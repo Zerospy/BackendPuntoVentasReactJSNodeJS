@@ -25,5 +25,5 @@ User.prototype.createdAt = undefined;
 User.prototype.updatedAt = undefined;
 
 module.exports = {
-  User
+  User, Role
 };
